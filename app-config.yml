@@ -1,0 +1,15 @@
+server:
+  host: "*"
+  port: 8081
+
+db:
+  connectionString: mongodb://localhost:27017/tfm
+
+longPollTimeout: 25000
+fileSizeLimit: 10mb
+passwordRegex: /^[a-zA-Z0-9_!]{8,}$/s
+avatar:
+  allowedFormats:
+    - image/png
+    - image/jpeg
+  maximumSize: 2mb
